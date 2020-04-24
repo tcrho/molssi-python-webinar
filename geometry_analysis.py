@@ -1,3 +1,10 @@
+"""
+This module has functions associated with analyzing the geometry of a molecule.
+
+It can be run as a script with an xyz file. 
+"""
+
+
 import numpy
 import os
 import argparse
@@ -13,7 +20,7 @@ def calculate_distance(atom1_coord, atom2_coord):
     return atom_distance
 
 def bond_check(atom_distance, minimum_length=0, maximum_length=1.5):
-    
+ 
    
     if atom_distance > minimum_length and atom_distance <= maximum_length:
         return True
